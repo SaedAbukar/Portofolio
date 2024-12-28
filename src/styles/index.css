@@ -1,232 +1,187 @@
-/* Define modern color variables */
+/* Root Variables for Theming */
 :root {
-  --primary-color: #1a1a1a; /* Soft light grayish-blue for background */
-  --secondary-color: #191919; /* Deep slate blue for navigation and dark elements */
-  --tertiary-color: #ffffff; /* Soft teal for accents and links */
-  --accent-color: #282828; /* Warm muted orange for borders and highlights */
-  --text-color: #d9d7d7; /* Dark gray for text */
-  --text-light-color: #7f8c8d; /* Lighter gray for secondary text */
-  --font-family-primary: "Roboto", sans-serif; /* Modern sans-serif font */
-  --font-family-secondary: "Merriweather", serif; /* Serif font for headings */
+  --primary-bg: #1e1e2f;
+  --secondary-bg: #29293d;
+  --accent-color: #4ecca3;
+  --text-color: #f1f1f1;
+  --text-light: #9b9b9b;
+  --font-family: "Poppins", sans-serif;
 }
 
-/* General reset for body and main to avoid unwanted scrolling */
-html,
-body {
-  width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+/* Global Reset */
+* {
   margin: 0;
-  font-family: var(--font-family-primary); /* Apply modern font to body */
-  background-color: var(--primary-color); /* Background in soft light gray */
-  color: var(--text-color); /* Text color */
-}
-
-/* General reset for body and main to avoid unwanted scrolling */
-main {
-  overflow-x: hidden;
-}
-
-/* Always display navigation in a row */
-nav {
-  position: fixed; /* Make the nav sticky */
-  top: 0; /* Stick to the top of the screen */
-  left: 0; /* Full width */
-  right: 0;
-  background: var(--secondary-color); /* Dark background for contrast */
-  color: white;
-  z-index: 1000; /* Ensure it stays above other content */
-  width: 100%; /* Ensure nav spans the full width */
-  padding: 8px 0; /* Reduced padding for mobile */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
-  border-radius: 8px; /* Rounded corners for modern feel */
-}
-
-/* Adjust navigation text for smaller screens */
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around; /* Distribute nav items evenly */
-  margin: 0;
-}
-
-nav ul li {
-  cursor: pointer;
-  padding: 8px 15px; /* Reduced padding for mobile */
-  color: var(--text-color);
-  font-size: 14px; /* Smaller font size for mobile */
-  transition: color 0.3s ease; /* Smooth color transition */
-  border-radius: 4px; /* Rounded corners for nav items */
-}
-
-nav ul li:hover {
-  color: var(--tertiary-color); /* Change color on hover to soft teal */
-}
-
-/* Modernized Section Styling */
-.section {
-  height: auto; /* Adjust height for content */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: var(--primary-color); /* Soft light grayish-blue for sections */
-  padding: 40px 20px; /* Generous padding for modern look */
-  border-bottom: 1px solid var(--accent-color); /* Warm orange border for accent */
-  width: 100%; /* Prevent overflow */
-  box-sizing: border-box; /* Include padding and borders in width calculation */
-  transition: background-color 0.3s ease; /* Smooth transition for background */
-  margin-bottom: 30px; /* Add space between sections */
-  border-radius: 12px; /* Rounded corners for sections */
-}
-
-/* Add inner padding for content inside sections */
-.section-inner {
-  width: 100%;
-  max-width: 1200px; /* Limit width of content */
-  padding: 0 15px; /* Inner padding for sections */
+  padding: 0;
   box-sizing: border-box;
 }
 
-.section:hover {
-  background: var(--accent-color); /* Subtle color change on hover */
+html {
+  scroll-behavior: smooth;
 }
 
-.section h1 {
-  font-size: 2.5rem; /* Larger font size for modern look */
-  color: var(--text-color); /* Dark gray for text */
-  margin-bottom: 20px; /* Spacing for modern look */
-  font-family: var(--font-family-secondary); /* Serif font for headings */
-  font-weight: 700; /* Bold title */
-  letter-spacing: 1px; /* Slightly spaced letters for modern feel */
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
-.section p {
-  font-size: 1.2rem; /* Increased font size for readability */
-  color: var(--text-light-color); /* Lighter gray for softer text */
-  margin-top: 15px;
-  line-height: 1.6; /* Increased line height for better readability */
-  max-width: 800px; /* Restrict paragraph width for better readability */
-  margin: 15px auto; /* Center text and create space above and below */
+.section {
+  padding: 100px 10%;
+  text-align: center;
 }
 
-/* Profile Picture Modern Style */
-.profile_pic {
+h1,
+h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 30px;
+  color: var(--text-light);
+}
+
+/* Navbar Styling */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 250px;
-  height: auto;
-  border-radius: 50%; /* Circle shape */
-  border: 4px solid var(--accent-color); /* Subtle border */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Modern shadow */
+  background-color: var(--secondary-bg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 20px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li:hover {
+  color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile_pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 25px; /* Spacing below the profile picture */
-  transition: transform 0.3s ease; /* Smooth hover effect */
+  border: 5px solid var(--accent-color);
 }
 
-.profile_pic:hover {
-  transform: scale(1.05); /* Subtle zoom effect on hover */
+.hero-text h1 {
+  font-size: 3rem;
 }
 
-/* Projects container on mobile */
+/* Skills Section - Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skills-category-card {
+  background-color: var(--secondary-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.skills-category-card:hover {
+  transform: translateY(-8px);
+}
+
+.skills-category-card h3 {
+  margin-bottom: 15px;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill-item {
+  background: var(--accent-color);
+  color: var(--text-color);
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.skill-item:hover {
+  background: #4b4bcf;
+}
+
+/* Projects Section */
 .projects-container {
   display: flex;
-  flex-direction: column; /* Stack project cards vertically */
-  gap: 25px; /* Increased gap for a more spacious look */
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 25px; /* More space between sections */
-  width: 100%;
+  gap: 30px;
 }
 
 .project-card {
-  border: 1px solid #ddd;
-  border-radius: 10px; /* Slightly rounded corners */
-  padding: 20px; /* Generous padding */
-  width: 90%; /* Make project cards take up most of the screen width */
-  max-width: 300px; /* Limit the maximum width */
-  background: white;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Larger shadow for modern effect */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-  margin: 0 auto;
+  background: var(--secondary-bg);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
 }
 
 .project-card:hover {
-  transform: translateY(-10px); /* Increased hover effect */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-}
-
-.project-card h3 {
-  margin-bottom: 15px; /* Spacing between title and content */
-  color: var(--secondary-color); /* Slate blue for headings */
-  font-size: 1.3rem; /* Slightly larger font for titles */
-  font-weight: 600; /* Semi-bold titles */
+  transform: translateY(-8px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
 }
 
 .project-card a {
-  color: var(--tertiary-color); /* Soft teal for links */
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent-color);
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .project-card a:hover {
-  color: var(--secondary-color); /* Darken the link color on hover */
-  text-decoration: underline; /* Underline on hover for a link effect */
+  text-decoration: underline;
 }
 
-/* Footer for mobile */
+/* Footer */
 footer {
   text-align: center;
-  padding: 20px 10px; /* Increased padding for a modern footer look */
-  background: var(--secondary-color); /* Slate blue for footer */
-  color: white;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for footer */
-  transition: background-color 0.3s ease; /* Smooth transition for background */
-  border-radius: 12px; /* Rounded corners for footer */
+  padding: 20px;
+  background: var(--secondary-bg);
+  color: var(--text-light);
+  margin-top: 50px;
 }
 
-footer:hover {
-  background: var(--tertiary-color); /* Change footer color on hover */
-}
-
-/* Media Queries for larger screens */
-@media (min-width: 768px) {
-  .section {
-    height: 100vh; /* Full screen height for each section */
-  }
-
-  .section h1 {
-    font-size: 3rem; /* Larger font for headers */
-  }
-
-  .section p {
-    font-size: 1.4rem; /* Slightly larger font for paragraph */
-  }
-
-  /* Adjust navigation for larger screens */
-  nav ul li {
-    padding: 10px 20px; /* Larger padding for bigger screens */
-    font-size: 16px; /* Larger font for desktop */
-  }
-
-  /* Projects container on larger screens */
-  .projects-container {
-    flex-direction: row; /* Align project cards horizontally */
-    gap: 30px; /* More space between cards */
-  }
-
-  .project-card {
-    width: 300px; /* Fixed width for project cards */
-  }
-}
-
-@media (min-width: 1024px) {
-  nav ul li {
-    padding: 12px 25px; /* Even larger padding for large screens */
-    font-size: 18px; /* Even larger font for larger devices */
-  }
-
-  .projects-container {
-    max-width: 1200px; /* Limit the width of the projects container */
-    margin: 0 auto; /* Center the container */
-  }
+footer p {
+  margin: 0;
 }

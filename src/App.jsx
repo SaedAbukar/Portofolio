@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
+import Hero from "./pages/Hero";
 import About from "./pages/About";
+import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
@@ -11,8 +12,9 @@ function App() {
     <>
       <Navbar />
       <main>
-        <Home />
+        <Hero />
         <About />
+        <Skills />
         <Projects />
         <Contact />
       </main>

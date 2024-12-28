@@ -11,8 +11,8 @@ function Navbar() {
   return (
     <nav>
       <ul>
-        <li onClick={() => handleScroll("home")}>Home</li>
         <li onClick={() => handleScroll("about")}>About</li>
+        <li onClick={() => handleScroll("skills")}>Skills</li>
         <li onClick={() => handleScroll("projects")}>Projects</li>
         <li onClick={() => handleScroll("contact")}>Contact</li>
       </ul>
