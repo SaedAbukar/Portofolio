@@ -13,9 +13,16 @@ function Project(props) {
         </a>
       )}
       <br></br>
-      <a href={github} target="_blank" rel="noopener noreferrer">
-        Github
-      </a>
+      <div className="social-icons">
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icon-link"
+        >
+          <i className="devicon-github-original"></i>
+        </a>
+      </div>
     </div>
   );
 }

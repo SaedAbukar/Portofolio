@@ -3,19 +3,40 @@ import React from "react";
 const skillsData = [
   {
     category: "Programming Languages",
-    skills: ["JavaScript", "Python", "Java"],
+    skills: [
+      { name: "JavaScript", icon: "devicon-javascript-plain" },
+      { name: "Python", icon: "devicon-python-plain" },
+      { name: "Java", icon: "devicon-java-plain" },
+    ],
   },
   {
     category: "Frontend Frameworks",
-    skills: ["React", "TailwindCSS", "HTML", "CSS", "JavaFX"],
+    skills: [
+      { name: "React", icon: "devicon-react-original" },
+      { name: "TailwindCSS", icon: "devicon-tailwindcss-plain" },
+      { name: "HTML", icon: "devicon-html5-plain" },
+      { name: "CSS", icon: "devicon-css3-plain" },
+      { name: "JavaFX", icon: "devicon-java-plain" },
+    ],
   },
   {
     category: "Backend & Databases",
-    skills: ["Node.js", "Express", "MongoDB", "MariaDB/SQL"],
+    skills: [
+      { name: "Node.js", icon: "devicon-nodejs-plain" },
+      { name: "Express", icon: "devicon-express-original" },
+      { name: "MongoDB", icon: "devicon-mongodb-plain" },
+      { name: "MariaDB/SQL", icon: "devicon-mysql-plain" },
+    ],
   },
   {
     category: "Tools & Platforms",
-    skills: ["Docker", "Git", "Figma", "Jester", "JUnit"],
+    skills: [
+      { name: "Docker", icon: "devicon-docker-plain" },
+      { name: "Git", icon: "devicon-git-plain" },
+      { name: "Figma", icon: "devicon-figma-plain" },
+      { name: "Jest", icon: "devicon-jest-plain" },
+      { name: "JUnit", icon: "devicon-junit-plain" },
+    ],
   },
 ];
 
@@ -32,7 +53,9 @@ function Skills() {
             <div className="skills-list">
               {category.skills.map((skill, i) => (
                 <div key={i} className="skill-item">
-                  {skill}
+                  <i className={`${skill.icon} skill-icon`}></i>{" "}
+                  {/* Devicon Icon */}
+                  {skill.name}
                 </div>
               ))}
             </div>
