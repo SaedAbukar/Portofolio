@@ -50,8 +50,9 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin: 0 15px;
   cursor: pointer;
+  font-size: 0.8rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
