@@ -11,7 +11,7 @@ const projectData = [
     image: JobScoutPic,
     title: "Job$cout",
     description:
-      "Developed a fullstack web application using the MERN (MongoDB, Express, React, Node.js) stack that scrapes job postings from third-party websites and saves them to a database. Registered users can view job listings, and the app offers live scraping functionality for signed-up users.",
+      "Developed a full-stack job-hunting application using the MERN stack (MongoDB, Express, React with Vite, Node.js) with user authentication, real-time updates, and responsive design. The app scrapes job postings from third-party sites, saves them to a database, and allows registered users to view listings. Integrated GPT-3.5-Turbo API to generate personalized cover letters based on job descriptions.",
     link: "https://jobscout-frontend.onrender.com/",
     github: "https://github.com/Viettranni/JobScout",
   },
