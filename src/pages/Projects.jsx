@@ -2,6 +2,7 @@ import React from "react";
 import Project from "../components/Project";
 import JobScoutPic from "../assets/jobscout.jpg";
 import LosSantosPic from "../assets/Cardealership.jpg";
+import HeartRatePic from "../assets/Heartrate.jpg";
 
 // Dummy project data
 const projectData = [
@@ -25,7 +26,7 @@ const projectData = [
   },
   {
     id: 3,
-    image: JobScoutPic,
+    image: HeartRatePic,
     title: "Heart Rate Sensor",
     description:
       "Built an IoT heart rate sensor using a Raspberry Pi Pico and MicroPython to calculate live heart rate and monitor heart rate variability (HRV) and transmit data via MQTT. The device also had in-device HRV-analysis calculation.",
