@@ -1,7 +1,7 @@
 /* Root Variables for Theming */
 :root {
   --primary-bg: #d2cea353;
-  --secondary-bg: #ded8b8;
+  --secondary-bg: rgb(247, 247, 239);
   --accent-color: #ffffff;
   --text-color: #000000;
   --text-light: #2f2f2f;
@@ -70,16 +70,16 @@ nav ul li:hover {
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  padding: 10px;
-  margin: 60px;
+  padding: 0px;
+  margin: 10px;
   margin-top: 90px;
 }
 
 .inner-hero {
-  background-color: rgb(247, 247, 239);
-  padding: 10px;
+  background-color: var(--secondary-bg);
+  padding: 5px;
+  margin: 5px;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
   width: 91%;
   box-sizing: border-box;
@@ -91,8 +91,7 @@ nav ul li:hover {
   max-width: 100%; /* Prevent overflow by making sure the image does not exceed its container's width */
   border-radius: 10%;
   object-fit: cover;
-  border: 1px solid var(--accent-color);
-  box-shadow: 0 8px 24px var(--accent-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text h1 {
@@ -163,7 +162,7 @@ nav ul li:hover {
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   padding: 10px;
-  margin: 60px;
+  margin: 10px;
 }
 
 #about h1 {
@@ -171,10 +170,9 @@ nav ul li:hover {
 }
 
 #about p {
-  background-color: rgb(247, 247, 239);
+  background-color: var(--secondary-bg);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
   width: 91%;
   box-sizing: border-box;
@@ -182,11 +180,11 @@ nav ul li:hover {
   font-size: 0.85rem;
   font-weight: 400;
   color: var(--text-color);
-  margin: 10px;
+  margin: 5px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.8;
-  padding: 20px;
+  padding: 0px;
 }
 
 /* Skills Section - Grid Layout */
@@ -198,8 +196,8 @@ nav ul li:hover {
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  padding: 10px;
-  margin: 60px;
+  padding: 0px;
+  margin: 10px;
 }
 
 #skills h1 {
@@ -215,15 +213,15 @@ nav ul li:hover {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
   justify-content: center;
-  margin: 10px;
+  margin: 20px;
   width: 91%;
 }
 
 .skills-category-card {
-  background-color: rgb(247, 247, 239);
-  padding: 20px;
+  background-color: var(--secondary-bg);
+  padding: 5px;
   border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   width: 100%; /* Make cards flexible */
   box-sizing: border-box;
@@ -242,7 +240,7 @@ nav ul li:hover {
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px; /* Space between skill items */
+  gap: 10px; /* Space between skill items */
   justify-content: center; /* Center the items */
   align-items: center; /* Align items vertically */
   padding: 20px 0;
@@ -253,7 +251,7 @@ nav ul li:hover {
 .skill-item {
   background: var(--text-color);
   color: var(--accent-color);
-  padding: 12px 24px;
+  padding: 10px;
   border-radius: 8px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -276,8 +274,8 @@ nav ul li:hover {
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  padding: 10px;
-  margin: 60px;
+  padding: 0px;
+  margin: 10px;
 }
 
 #projects h1 {
@@ -285,7 +283,7 @@ nav ul li:hover {
 }
 
 #projects h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 #projects p {
@@ -294,8 +292,7 @@ nav ul li:hover {
   color: var(--text-color);
   margin-bottom: 30px;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px;
   line-height: 1.8;
 }
 
@@ -308,12 +305,13 @@ nav ul li:hover {
 }
 
 .project-card {
-  background: rgb(247, 247, 239);
-  padding: 30px;
+  background-color: var(--secondary-bg);
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 400px;
+  margin: 10px auto; /* Center form with reduced space */
 }
 .project-card img {
   width: 100%;
@@ -326,7 +324,6 @@ nav ul li:hover {
   text-align: left;
   color: var(--text-color);
   line-height: 1.8;
-  padding: 10px;
 }
 
 .project-card p {
@@ -339,7 +336,6 @@ nav ul li:hover {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.8;
-  padding: 10px;
 }
 
 .project-card:hover {
@@ -369,7 +365,7 @@ nav ul li:hover {
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   padding: 10px;
-  margin: 60px;
+  margin: 10px;
 }
 
 #contact h1 {
@@ -386,10 +382,10 @@ nav ul li:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 30px;
-  background-color: rgb(247, 247, 239);
+  padding: 10px;
+  background-color: var(--secondary-bg);
   border-radius: 15px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   max-width: 1200px;
   margin: 10px auto; /* Center form with reduced space */
   width: 100%; /* Ensure it scales with the screen */
@@ -410,7 +406,7 @@ label {
 
 input,
 textarea {
-  padding: 12px;
+  padding: 10px;
   font-size: 1.1rem;
   border: 2px solid #ddd;
   border-radius: 8px;
