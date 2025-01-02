@@ -29,7 +29,7 @@ const projectData = [
     image: HeartRatePic,
     title: "Heart Rate Sensor",
     description:
-      "Built an IoT heart rate sensor using a Raspberry Pi Pico and MicroPython to calculate live heart rate and monitor heart rate variability (HRV) and transmit data via MQTT. The device also had in-device HRV-analysis calculation.",
+      "Developed an IoT heart rate sensor using Raspberry Pi Pico and MicroPython to monitor real-time heart rate and HRV. The device calculates HRV on-board and transmits data wirelessly via MQTT. It integrates with Kubios for advanced health analytics. Technologies used include also Wi-Fi and Thonny IDE. This solution offers efficient, continuous heart rate monitoring and analysis.",
     link: "",
     github: "https://gitlab.metropolia.fi/karhukopla/hardware2_project",
   },
