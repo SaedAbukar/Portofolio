@@ -1,10 +1,13 @@
 import React from "react";
 import Project from "../components/Project";
+import JobScoutPic from "../assets/jobscout.jpg";
+import LosSantosPic from "../assets/Cardealership.jpg";
 
 // Dummy project data
 const projectData = [
   {
     id: 1,
+    image: JobScoutPic,
     title: "Job$cout",
     description:
       "Developed a fullstack web application using the MERN (MongoDB, Express, React, Node.js) stack that scrapes job postings from third-party websites and saves them to a database. Registered users can view job listings, and the app offers live scraping functionality for signed-up users.",
@@ -13,6 +16,7 @@ const projectData = [
   },
   {
     id: 2,
+    image: LosSantosPic,
     title: "Los Santos Customs",
     description:
       "Developed a three-phase simulation in Java using JavaFX and SQL to model customer interactions at a car dealership, including sales, financing, test drives, and customer service. The program utilized normal and exponential distributions for realism, with user inputs and car data stored in a SQL database. Outputs were exported to CSV for data analysis, providing insights to improve efficiency and customer satisfaction.",
@@ -21,6 +25,7 @@ const projectData = [
   },
   {
     id: 3,
+    image: JobScoutPic,
     title: "Heart Rate Sensor",
     description:
       "Built an IoT heart rate sensor using a Raspberry Pi Pico and MicroPython to calculate live heart rate and monitor heart rate variability (HRV) and transmit data via MQTT. The device also had in-device HRV-analysis calculation.",

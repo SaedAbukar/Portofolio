@@ -44,8 +44,6 @@ function Skills() {
   return (
     <div className="section" id="skills">
       <h1>Skills</h1>
-      <p>Here are the technologies and tools I work with:</p>
-
       <div className="skills-grid">
         {skillsData.map((category, index) => (
           <div key={index} className="skills-category-card">

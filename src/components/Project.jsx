@@ -1,10 +1,11 @@
 import React from "react";
 
 function Project(props) {
-  const { title, description, link, github } = props;
+  const { image, title, description, link, github } = props;
 
   return (
     <div className="project-card">
+      <img src={image} alt="project picture"></img>
       <h3>{title}</h3>
       <p>{description}</p>
       {link && (

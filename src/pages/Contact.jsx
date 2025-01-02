@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../styles/contact.css";
 function Contact() {
   const [formData, setFormData] = useState({
     email: "",
@@ -53,8 +52,6 @@ function Contact() {
   return (
     <div className="section" id="contact">
       <h1>Contact</h1>
-      <p>Feel free to reach out by filling out the form below.</p>
-
       {/* Display success or error message */}
       {success && <p className="success-message">Email sent successfully!</p>}
       {error && <p className="error-message">{error}</p>}
