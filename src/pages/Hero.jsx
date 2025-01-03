@@ -42,7 +42,7 @@ function Hero() {
             </a>
           </div>
           <a href={SaedCV} download>
-            <button className="btn-cv">Download CV</button>
+            <button className="button1">Download CV</button>
           </a>
         </div>
       </div>

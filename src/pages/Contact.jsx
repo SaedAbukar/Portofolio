@@ -95,7 +95,7 @@ function Contact() {
           />
         </div>
 
-        <button type="submit" disabled={loading}>
+        <button type="submit" disabled={loading} className="button1">
           {loading ? "Sending..." : "Send Message"}
         </button>
       </form>

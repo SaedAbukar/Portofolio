@@ -1,5 +1,23 @@
 import React from "react";
-import NY_image from "../assets/NY_Background.jpg";
+import Himos from "../assets/Himos.jpg";
+import Monaco from "../assets/Monaco.jpg";
+import NewYork from "../assets/NewYork.jpg";
+import NiagarFalls from "../assets/Niagara_Falls.jpg";
+import Ottawa from "../assets/Ottawa.jpg";
+import Stadikka from "../assets/Stadikka.jpg";
+import ImageSlider from "../components/ImageSlider";
+
+const IMAGES = [
+  { url: Ottawa, alt: "Saed at Ottawa National Gallery" },
+  { url: NewYork, alt: "Saed at New York" },
+  { url: Himos, alt: "Saed at Himos hill" },
+  { url: NiagarFalls, alt: "Saed at Niagara Falls" },
+  { url: Monaco, alt: "Saed at Monaco" },
+  {
+    url: Stadikka,
+    alt: "Saed at Helsinki Olympic Stadion field playing football",
+  },
+];
 
 function About() {
   return (
@@ -26,6 +44,16 @@ function About() {
         Feel free to reach out—there’s a lot more to explore, and I’d love to
         share my journey with you!
       </p>
+      <div
+        style={{
+          maxWidth: "1200px",
+          width: "100%",
+          margin: "0 auto",
+        }}
+        className="img-slider-container"
+      >
+        <ImageSlider images={IMAGES} />
+      </div>
     </div>
   );
 }
