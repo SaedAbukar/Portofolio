@@ -566,7 +566,7 @@ footer p {
   #skills h1,
   #projects h1,
   #contact h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .hero-text .tagline,
@@ -590,8 +590,33 @@ footer p {
     font-size: 3rem;
   }
 
+  #about {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between h1 and the content */
+  }
+
+  #about > h1 {
+    flex: 0 0 25%; /* Make h1 take 25% of the width */
+    margin: 0; /* Remove default margin */
+  }
+
+  #about > div {
+    display: flex;
+    justify-content: space-between;
+    flex: 1; /* Allow this div to take the remaining space */
+    gap: 20px;
+  }
+
+  #about p {
+    flex: 1;
+    max-width: 50%;
+  }
+
   .img-slider-container {
-    aspect-ratio: 8/3;
+    flex: 1;
+    max-width: 50%;
+    aspect-ratio: 6/3;
   }
 }
 
@@ -625,10 +650,6 @@ footer p {
   .social-icons a {
     font-size: 3rem;
   }
-
-  .img-slider-container {
-    aspect-ratio: 6/3;
-  }
 }
 
 /* Large desktops (1200px and up) */
@@ -660,10 +681,6 @@ footer p {
 
   .social-icons a {
     font-size: 3rem;
-  }
-
-  .img-slider-container {
-    aspect-ratio: 10/5;
   }
 }
 
