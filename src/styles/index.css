@@ -119,7 +119,6 @@ nav ul li:focus-visible {
   font-size: 0.85rem;
   font-weight: 400;
   color: var(--text-color);
-  margin-bottom: 30px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -136,7 +135,7 @@ nav ul li:focus-visible {
 
 .social-icons a {
   color: var(--text-color);
-  font-size: 1.5rem; /* Larger icon size */
+  font-size: 2rem; /* Larger icon size */
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -154,6 +153,24 @@ nav ul li:focus-visible {
 .social-icons a:focus-visible i {
   transform: scale(1.2);
 }
+
+.hero-btn-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.hero-btn-container a,
+.hero-btn-container button {
+  flex: 1 1 45%; /* Allow flexibility and set initial size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  min-width: 120px; /* Prevent buttons from becoming too small */
+}
+
 /* About Me Section */
 
 #about {
@@ -183,12 +200,11 @@ nav ul li:focus-visible {
   font-size: 0.85rem;
   font-weight: 400;
   color: var(--text-color);
-  margin: 5px;
   margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1.8;
-  padding: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .img-slider-container {
@@ -456,7 +472,7 @@ nav ul li:focus-visible {
   gap: 20px;
   padding: 10px;
   background-color: var(--secondary-bg);
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   max-width: 1200px;
   margin: 10px auto; /* Center form with reduced space */
@@ -611,6 +627,7 @@ footer p {
   #about p {
     flex: 1;
     max-width: 50%;
+    margin: 0px;
   }
 
   .img-slider-container {

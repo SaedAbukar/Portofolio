@@ -3,6 +3,19 @@ import Saed from "../assets/Saed_AVI.jpg";
 import SaedCV from "../assets/Saed_Abukar_CV.pdf";
 
 function Hero() {
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // Get the height of the navbar
+      const navbarHeight = document.querySelector("nav").offsetHeight;
+
+      // Scroll to the element, adjusting the position by the navbar's height
+      window.scrollTo({
+        top: element.offsetTop - navbarHeight, // Adjust the top position
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div className="section" id="hero">
       <div className="inner-hero">
@@ -41,9 +54,14 @@ function Hero() {
               <i className="devicon-linkedin-plain"></i>
             </a>
           </div>
-          <a href={SaedCV} download>
-            <button className="button1">Download CV</button>
-          </a>
+          <div className="hero-btn-container">
+            <a href={SaedCV} download>
+              <button className="button1">Download CV</button>
+            </a>
+            <button className="button1" onClick={() => handleScroll("contact")}>
+              Contact Me
+            </button>
+          </div>
         </div>
       </div>
     </div>
