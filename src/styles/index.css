@@ -96,7 +96,7 @@ nav ul li:focus-visible {
 }
 
 .hero-text h1 {
-  font-size: 1rem; /* Increased font size */
+  font-size: 2rem; /* Increased font size */
   font-weight: 600;
   color: var(--text-color);
   margin-bottom: 10px;
