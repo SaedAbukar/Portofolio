@@ -296,7 +296,8 @@ nav ul li:focus-visible {
   gap: 30px;
   justify-content: center;
   margin: 20px;
-  width: 91%;
+  width: 100%;
+  padding: 10px;
 }
 
 .skills-category-card {
@@ -383,7 +384,7 @@ nav ul li:focus-visible {
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
   margin: 10px;
 }
@@ -394,8 +395,10 @@ nav ul li:focus-visible {
   border-radius: 10px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 400px;
-  margin: 10px auto; /* Center form with reduced space */
+  flex: 1 1 calc(25% - 10px); /* Adjust for 3 cards per row */
+  margin: 0; /* Remove auto margin */
+  box-sizing: border-box;
+  min-width: 250px;
 }
 .project-card img {
   width: 100%;
@@ -580,7 +583,7 @@ footer p {
   #skills h1,
   #projects h1,
   #contact h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .hero-text .tagline,
@@ -604,10 +607,29 @@ footer p {
     font-size: 3rem;
   }
 
+  .inner-hero {
+    display: flex;
+    gap: 30px;
+  }
+
+  .profile_pic {
+    width: 350px;
+  }
+
+  .hero-text {
+    text-align: left;
+    margin: 0px;
+  }
+
+  .hero-text .description {
+    text-align: left;
+    margin: 0px;
+  }
+
   #about {
     display: flex;
     align-items: center;
-    gap: 40px; /* Space between h1 and the content */
+    gap: 30px; /* Space between h1 and the content */
   }
 
   #about > h1 {
