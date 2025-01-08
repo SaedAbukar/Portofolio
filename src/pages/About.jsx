@@ -3,15 +3,15 @@ import Himos from "../assets/Himos.jpg";
 import Monaco from "../assets/Monaco.jpg";
 import NewYork from "../assets/NewYork.jpg";
 import NiagarFalls from "../assets/Niagara_Falls.jpg";
-import Ottawa from "../assets/Ottawa.jpg";
+import Veneily from "../assets/Veneily.jpg";
 import Stadikka from "../assets/Stadikka.jpg";
 import ImageSlider from "../components/ImageSlider";
 
 const IMAGES = [
-  { url: Ottawa, alt: "Saed at Ottawa National Gallery" },
   { url: NewYork, alt: "Saed at New York" },
   { url: Himos, alt: "Saed at Himos hill" },
   { url: NiagarFalls, alt: "Saed at Niagara Falls" },
+  { url: Veneily, alt: "Saed at boating" },
   { url: Monaco, alt: "Saed at Monaco" },
   {
     url: Stadikka,

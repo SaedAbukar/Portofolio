@@ -27,8 +27,7 @@ function Hero() {
         <div className="hero-text">
           <h1>Saed Abukar</h1>
           <p className="tagline">
-            Passionate Software Engineering Student | Building the Future of
-            Technology
+            Passionate Software Developer | Building the Future of Technology
           </p>
           <p className="description">
             I specialize in creating innovative and efficient software

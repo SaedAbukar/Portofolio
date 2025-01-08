@@ -1,9 +1,10 @@
 /* Root Variables for Theming */
 :root {
-  --primary-bg: #d2cea353;
-  --secondary-bg: rgb(247, 247, 239);
+  --primary-bg: #ffffff;
+  --secondary-bg: #ffffff;
   --accent-color: #ffffff;
   --text-color: #000000;
+  --icon-color: #2659e4;
   --text-light: #2f2f2f;
   --font-family: "Poppins", sans-serif;
 }
@@ -59,7 +60,7 @@ nav ul li {
 nav ul li:hover,
 nav ul li:focus-visible {
   transform: translateY(-3px);
-  text-decoration: underline;
+  color: var(--icon-color);
 }
 
 /* Hero Section */
@@ -73,16 +74,17 @@ nav ul li:focus-visible {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   padding: 0px;
   margin: 10px;
-  margin-top: 90px;
+  height: 100vh;
 }
 
 .inner-hero {
+  justify-content: center;
   background-color: var(--secondary-bg);
   padding: 5px;
   margin: 5px;
   border-radius: 12px;
   transition: transform 0.3s ease;
-  width: 91%;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -98,7 +100,6 @@ nav ul li:focus-visible {
 .hero-text h1 {
   font-size: 2rem; /* Increased font size */
   font-weight: 600;
-  color: var(--text-color);
   margin-bottom: 10px;
   letter-spacing: 1px;
   word-wrap: break-word; /* Prevent text overflow */
@@ -141,7 +142,7 @@ nav ul li:focus-visible {
 
 .social-icons a:hover,
 .social-icons a:focus-visible {
-  color: var(--primary-bg);
+  color: var(--icon-color);
   transform: translateY(-5px);
 }
 
@@ -284,6 +285,7 @@ nav ul li:focus-visible {
 
 #skills h1 {
   font-size: 2rem;
+  padding-top: 15px;
 }
 
 #skills h3 {
@@ -295,7 +297,7 @@ nav ul li:focus-visible {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
   justify-content: center;
-  margin: 20px;
+  margin: 0px;
   width: 100%;
   padding: 10px;
 }
@@ -347,7 +349,7 @@ nav ul li:focus-visible {
 
 .skill-item:hover,
 .skill-item:focus-visible {
-  background: var(--text-light);
+  background: var(--icon-color);
 }
 
 /* Projects Section */
@@ -365,6 +367,7 @@ nav ul li:focus-visible {
 
 #projects h1 {
   font-size: 2rem;
+  padding-top: 15px;
 }
 
 #projects h3 {
@@ -409,7 +412,6 @@ nav ul li:focus-visible {
 
 .project-card h3 {
   text-align: left;
-  color: var(--text-color);
   line-height: 1.8;
 }
 
@@ -441,7 +443,7 @@ nav ul li:focus-visible {
 
 .project-card a:hover,
 .project-card a:focus-visible {
-  color: var(--primary-bg);
+  color: var(--icon-color);
 }
 
 /* Contact Section */
@@ -460,7 +462,8 @@ nav ul li:focus-visible {
 #contact h1 {
   font-size: 2rem;
   color: var(--text-color);
-  margin-bottom: 20px;
+  padding-top: 15px;
+  margin-bottom: 0px;
   text-align: center;
   font-family: var(--font-family);
   font-weight: 700;
@@ -538,7 +541,7 @@ textarea {
 
 .button1:hover:not(:disabled),
 .button1:focus-visible:not(:disabled) {
-  background-color: var(--primary-bg);
+  background-color: var(--icon-color);
   transform: translateY(-4px);
 }
 
@@ -613,6 +616,7 @@ footer p {
   }
 
   .profile_pic {
+    content: url("../assets/Ottawa.jpg"); /* Path to the larger image */
     width: 350px;
   }
 
@@ -653,7 +657,7 @@ footer p {
   .img-slider-container {
     flex: 1;
     max-width: 50%;
-    aspect-ratio: 6/3;
+    aspect-ratio: 5/3;
   }
 }
 
@@ -664,7 +668,7 @@ footer p {
   #skills h1,
   #projects h1,
   #contact h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .hero-text .tagline,
@@ -696,7 +700,7 @@ footer p {
   #skills h1,
   #projects h1,
   #contact h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .hero-text .tagline,
