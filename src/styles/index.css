@@ -58,8 +58,8 @@ nav ul li {
 
 nav ul li:hover,
 nav ul li:focus-visible {
-  color: var(--accent-color);
   transform: translateY(-3px);
+  text-decoration: underline;
 }
 
 /* Hero Section */
