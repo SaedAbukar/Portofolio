@@ -3,6 +3,7 @@ import Project from "../components/Project";
 import JobScoutPic from "../assets/jobscout.jpg";
 import LosSantosPic from "../assets/Cardealership.jpg";
 import HeartRatePic from "../assets/Heartrate.jpg";
+import PenaltyShootoutPic from "../assets/jobscout.jpg"; // Add image for this project
 
 // Dummy project data
 const projectData = [
@@ -32,6 +33,16 @@ const projectData = [
       "Developed an IoT heart rate sensor using Raspberry Pi Pico and MicroPython to monitor real-time heart rate and HRV. The device calculates HRV on-board and transmits data wirelessly via MQTT. It integrates with Kubios for advanced health analytics. Technologies used include also Wi-Fi and Thonny IDE. This solution offers efficient, continuous heart rate monitoring and analysis.",
     link: "",
     github: "https://gitlab.metropolia.fi/karhukopla/hardware2_project",
+  },
+  {
+    id: 4,
+    image: PenaltyShootoutPic, // Add appropriate image for the project
+    title: "World Cup Penalty Shootout",
+    description:
+      "Developed a full-stack web application simulating a keyboard World Cup penalty shootout. The backend, using Python and Flask, stores venue data in an SQL database. The frontend, built with Vanilla JavaScript, HTML, and CSS, tracks player flights and displays locations in real-time using Leaflet maps. Integrated real-time user input and game logic to create an interactive and dynamic gameplay experience.",
+    link: "https://github.com/SaedAbukar/Metropolia-ICT-Year-1/tree/master/Programming%202",
+    github:
+      "https://github.com/SaedAbukar/Metropolia-ICT-Year-1/tree/master/Programming%202",
   },
 ];
 

@@ -25,25 +25,23 @@ function About() {
       <h1>About Me</h1>
       <div>
         <p>
-          Hello! I’m Saed Abukar, currently pursuing a degree in Software
-          Engineering at Metropolia University of Applied Sciences. With a deep
-          passion for technology and problem-solving, I thrive on creating
-          innovative and meaningful projects that make a real impact.
+          I’m Saed Abukar, a Software Engineering student at Metropolia
+          University of Applied Sciences. I have a strong foundation in
+          developing scalable, efficient software solutions and am passionate
+          about solving complex problems through technology. My focus is on
+          creating user-friendly applications, leveraging modern frameworks and
+          methodologies to deliver high-quality results.
           <br />
-          Whether it’s developing user-friendly applications or designing
-          efficient systems, I am always eager to learn and apply new skills to
-          overcome real-world challenges.
+          Throughout my studies, I’ve gained hands-on experience in software
+          development, system design, and data structures. I thrive in
+          collaborative environments and am always eager to learn new
+          technologies to improve my skills and contribute meaningfully to
+          real-world projects.
           <br />
-          Outside of my studies and coding projects, I’m an avid football
-          player, fitness enthusiast, and nature lover. I believe in balancing
-          both mental and physical growth, which is why I stay active on the
-          field and in the gym, and find inspiration in the outdoors.
-          <br />
-          I’m excited about the future and the opportunities to collaborate,
-          learn, and contribute to projects that bring positive change. I’m
-          always open to connecting with like-minded professionals and curious
-          minds. Feel free to reach out—there’s a lot more to explore, and I’d
-          love to share my journey with you!
+          I’m actively seeking opportunities to apply my technical expertise and
+          work on projects that challenge me and have a positive impact. Let’s
+          connect and explore how we can work together to build innovative
+          software solutions.
         </p>
         <div
           style={{

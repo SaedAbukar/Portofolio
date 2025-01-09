@@ -8,11 +8,11 @@ function Project(props) {
       <img src={image} alt="project picture"></img>
       <h3>{title}</h3>
       <p>{description}</p>
-      {link && (
+      {/*link && (
         <a href={link} target="_blank" rel="noopener noreferrer">
           Visit site
         </a>
-      )}
+      )*/}
       <br></br>
       <div className="social-icons">
         <a

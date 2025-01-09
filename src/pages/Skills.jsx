@@ -26,6 +26,7 @@ const skillsData = [
       { name: "Express", icon: "devicon-express-original" },
       { name: "MongoDB", icon: "devicon-mongodb-plain" },
       { name: "MariaDB/SQL", icon: "devicon-mysql-plain" },
+      { name: "Flask", icon: "devicon-flask-original" }, // Added Flask here
     ],
   },
   {
@@ -36,6 +37,17 @@ const skillsData = [
       { name: "Figma", icon: "devicon-figma-plain" },
       { name: "Jest", icon: "devicon-jest-plain" },
       { name: "JUnit", icon: "devicon-junit-plain" },
+      { name: "Linux", icon: "devicon-linux-plain" },
+    ],
+  },
+  // Added IoT & Embedded Systems for Heart Rate Sensor Project
+  {
+    category: "IoT & Embedded Systems",
+    skills: [
+      { name: "Raspberry Pi Pico", icon: "devicon-raspberry-pi-plain" },
+      { name: "MicroPython", icon: "devicon-python-plain" },
+      { name: "MQTT", icon: "devicon-mqtt-plain" }, // Placeholder for MQTT icon
+      { name: "Wi-Fi", icon: "devicon-wifi-plain" },
     ],
   },
 ];

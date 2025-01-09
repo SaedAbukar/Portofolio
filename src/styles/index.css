@@ -99,11 +99,28 @@ nav ul li:focus-visible {
 
 .hero-text h1 {
   font-size: 2rem; /* Increased font size */
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 10px;
   letter-spacing: 1px;
   word-wrap: break-word; /* Prevent text overflow */
   max-width: 100%; /* Prevent overflow by constraining width */
+}
+
+.hero-h1-ideas {
+  font-family: "Tangerine", cursive;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.hero-h1-software {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 600;
+  font-size: 2.2rem;
+  background-color: var(--text-color);
+  color: var(--accent-color);
+  border-radius: 10px;
+  padding: 0 5px;
+  box-shadow: 0 0 15px var(--text-color);
 }
 
 .hero-text .tagline {
@@ -398,7 +415,7 @@ nav ul li:focus-visible {
   border-radius: 10px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 1 1 calc(25% - 10px); /* Adjust for 3 cards per row */
+  flex: 1 1 calc(20% - 10px); /* Adjust for 3 cards per row */
   margin: 0; /* Remove auto margin */
   box-sizing: border-box;
   min-width: 250px;
@@ -718,6 +735,10 @@ footer p {
   nav ul li,
   footer p {
     font-size: 1rem;
+  }
+
+  .hero-h1-software {
+    font-size: 3rem;
   }
 
   .social-icons a {

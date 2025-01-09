@@ -25,7 +25,10 @@ function Hero() {
           alt="profile picture of Saed Abukar"
         />
         <div className="hero-text">
-          <h1>Saed Abukar</h1>
+          <h1>
+            Turning <span className="hero-h1-ideas">Ideas</span> Into{" "}
+            <span className="hero-h1-software"> Software</span>
+          </h1>
           <p className="tagline">
             Passionate Software Developer | Building the Future of Technology
           </p>
