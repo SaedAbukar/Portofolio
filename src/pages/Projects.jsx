@@ -3,7 +3,7 @@ import Project from "../components/Project";
 import JobScoutPic from "../assets/jobscout.jpg";
 import LosSantosPic from "../assets/Cardealership.jpg";
 import HeartRatePic from "../assets/Heartrate.jpg";
-import PenaltyShootoutPic from "../assets/jobscout.jpg"; // Add image for this project
+import PenaltyShootoutPic from "../assets/WC_Game.jpg"; // Add image for this project
 
 // Dummy project data
 const projectData = [
