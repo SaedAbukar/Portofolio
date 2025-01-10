@@ -1,4 +1,4 @@
-/* Root Variables for Theming */
+/* Root Variables for Light Mode */
 :root {
   --primary-bg: #ffffff;
   --secondary-bg: #ffffff;
@@ -6,7 +6,48 @@
   --text-color: #000000;
   --icon-color: #000000b1;
   --text-light: #2f2f2f;
+  --shadow-color-dark: rgba(0, 0, 0, 0.15);
+  --shadow-color-darker: rgba(0, 0, 0, 0.3);
   --font-family: "Poppins", sans-serif;
+}
+
+/* Root Variables for Dark Mode */
+:root.dark {
+  --primary-bg: #000000; /* Main background color */
+  --secondary-bg: #0f0f0f; /* Slightly lighter background for sections */
+  --accent-color: #000000; /* Accent color for highlights */
+  --text-color: #ffffff; /* Primary text color */
+  --icon-color: #ffffffb1; /* Subtle icon/text highlight */
+  --text-light: #d3d3d3; /* Lighter text color for less emphasis */
+  --shadow-color-dark: rgba(255, 255, 255, 0.1);
+  --shadow-color-darker: rgba(255, 255, 255, 0.15);
+  --font-family: "Poppins", sans-serif;
+}
+
+/* Transition for smooth theme change */
+body {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav,
+.section,
+#hero,
+#about,
+#skills,
+#projects,
+#contact,
+footer,
+.contact-form,
+.skills-category-card,
+.project-card {
+  transition: background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease;
+}
+
+input,
+textarea,
+.button1 {
+  transition: background-color 0.1s ease, border-color 0.1s ease,
+    color 0.1s ease;
 }
 
 /* Global Reset */
@@ -39,7 +80,7 @@ nav {
   left: 0;
   width: 100%;
   background-color: var(--secondary-bg);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--shadow-color-dark);
   z-index: 1000;
 }
 
@@ -51,11 +92,35 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin: 0 5px;
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.8rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.theme-icon-btn {
+  background: none; /* Removes background color */
+  border: none; /* Removes border */
+  padding: 0; /* Removes padding */
+  margin: 0;
+  display: inline-flex; /* Ensures icon stays inline */
+  align-items: center; /* Vertically centers the icon */
+  justify-content: center; /* Horizontally centers the icon */
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.material-symbols-outlined {
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 24px; /* Icon size */
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--text-color);
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -74,6 +139,14 @@ nav ul li.selected {
   box-shadow: 0 3px 15px var(--text-color); /* Apply the same shadow as hover */
 }
 
+.material-symbols-outlined:hover,
+.material-symbols-outlined:focus-visible {
+  background-color: var(--text-color); /* Highlight selected item */
+  color: var(--accent-color); /* Change color for selected item */
+  transform: translateY(-6px); /* Apply the same transform as hover */
+  box-shadow: 0 3px 15px var(--text-color); /* Apply the same shadow as hover */
+}
+
 /* Hero Section */
 #hero {
   background-color: var(--secondary-bg);
@@ -82,7 +155,7 @@ nav ul li.selected {
   justify-content: center;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px var(--shadow-color-dark);
   padding: 0px;
   margin: 10px;
   height: 100vh;
@@ -105,7 +178,7 @@ nav ul li.selected {
   max-width: 100%; /* Prevent overflow by making sure the image does not exceed its container's width */
   border-radius: 10%;
   object-fit: cover;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px var(--shadow-color-darker);
 }
 
 .hero-text h1 {
@@ -124,9 +197,9 @@ nav ul li.selected {
 }
 
 .hero-h1-software {
-  font-family: "Roboto", "sans-serif";
+  font-family: "Anta", "sans-serif";
   font-weight: 600;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   background-color: var(--text-color);
   color: var(--accent-color);
   border-radius: 10px;
@@ -141,7 +214,6 @@ nav ul li.selected {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  opacity: 0.8;
 }
 
 .hero-text .description {
@@ -209,7 +281,7 @@ nav ul li.selected {
   justify-content: center;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px var(--shadow-color-dark);
   padding: 15px;
   margin: 10px;
 }
@@ -306,7 +378,7 @@ nav ul li.selected {
   justify-content: center;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px var(--shadow-color-dark);
   padding: 0px;
   margin: 10px;
 }
@@ -334,7 +406,7 @@ nav ul li.selected {
   background-color: var(--secondary-bg);
   padding: 5px;
   border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px var(--shadow-color-darker);
   transition: transform 0.3s ease;
   width: 100%; /* Make cards flexible */
   box-sizing: border-box;
@@ -373,6 +445,7 @@ nav ul li.selected {
   transition: background 0.3s ease, transform 0.3s ease;
   text-align: center;
   min-width: 120px; /* Prevent overly small items */
+  box-shadow: 0 0 15px var(--text-color);
 }
 
 .skill-item:hover,
@@ -388,7 +461,7 @@ nav ul li.selected {
   justify-content: center;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px var(--shadow-color-dark);
   padding: 0px;
   margin: 10px;
 }
@@ -424,7 +497,7 @@ nav ul li.selected {
   background-color: var(--secondary-bg);
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px var(--shadow-color-darker);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex: 1 1 calc(20% - 10px); /* Adjust for 3 cards per row */
   margin: 0; /* Remove auto margin */
@@ -458,7 +531,7 @@ nav ul li.selected {
 .project-card:hover,
 .project-card:focus-visible {
   transform: translateY(-8px);
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 18px var(--shadow-color-darker);
 }
 
 .project-card a {
@@ -482,7 +555,7 @@ nav ul li.selected {
   justify-content: center;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px var(--shadow-color-dark);
   padding: 10px;
   margin: 10px;
 }
@@ -505,7 +578,7 @@ nav ul li.selected {
   padding: 10px;
   background-color: var(--secondary-bg);
   border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px var(--shadow-color-darker);
   max-width: 1200px;
   margin: 10px auto; /* Center form with reduced space */
   width: 100%; /* Ensure it scales with the screen */
@@ -539,7 +612,7 @@ input:focus,
 textarea:focus {
   outline: none;
   border-color: var(--accent-color);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px var(--shadow-color-dark);
 }
 
 textarea {
@@ -560,6 +633,7 @@ textarea {
   margin-top: 20px;
   align-self: center;
   width: 60%;
+  box-shadow: 0 0 15px var(--text-color);
 }
 
 .button1:disabled {
@@ -606,6 +680,18 @@ footer p {
 }
 
 /* Media Queries for Common Breakpoints */
+@media (max-width: 320px) {
+  nav ul li {
+    font-size: 0.7rem;
+    margin: 0px;
+    padding: 0 3px;
+  }
+
+  .material-symbols-outlined {
+    font-size: 18px;
+    padding: 2px;
+  }
+}
 
 /* Tablets and small desktops (768px and up) */
 @media (min-width: 768px) {
@@ -626,6 +712,10 @@ footer p {
   textarea,
   button {
     font-size: 1rem;
+  }
+
+  .hero-h1-software {
+    font-size: 2.8rem;
   }
 
   .skills-category-card h3,
