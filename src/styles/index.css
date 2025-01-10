@@ -4,7 +4,7 @@
   --secondary-bg: #ffffff;
   --accent-color: #ffffff;
   --text-color: #000000;
-  --icon-color: #b7b77d99;
+  --icon-color: #000000b1;
   --text-light: #2f2f2f;
   --font-family: "Poppins", sans-serif;
 }
@@ -51,7 +51,9 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 0.8rem;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -59,8 +61,17 @@ nav ul li {
 
 nav ul li:hover,
 nav ul li:focus-visible {
-  transform: translateY(-3px);
-  color: var(--icon-color);
+  transform: translateY(-6px);
+  background-color: var(--text-color);
+  color: var(--accent-color);
+  box-shadow: 0 3px 15px var(--text-color);
+}
+
+nav ul li.selected {
+  background-color: var(--text-color); /* Highlight selected item */
+  color: var(--accent-color); /* Change color for selected item */
+  transform: translateY(-6px); /* Apply the same transform as hover */
+  box-shadow: 0 3px 15px var(--text-color); /* Apply the same shadow as hover */
 }
 
 /* Hero Section */
