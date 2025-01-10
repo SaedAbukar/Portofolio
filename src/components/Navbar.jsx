@@ -4,17 +4,42 @@ function Navbar() {
   const [selectedItem, setSelectedItem] = useState(null);
   const [theme, setTheme] = useState("light");
 
-  // Load theme from localStorage
+  // Detect system theme and set initial theme
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
+    const savedTheme = localStorage.getItem("theme") || systemTheme;
     setTheme(savedTheme);
-    document.documentElement.className = savedTheme; // Set theme class on the root
+    document.documentElement.className = savedTheme; // Apply the theme class to root
   }, []);
 
+  // Listen for system theme changes
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const handleSystemThemeChange = (e) => {
+      const newSystemTheme = e.matches ? "dark" : "light";
+      const savedTheme = localStorage.getItem("theme");
+      // Update theme only if no preference is saved
+      if (!savedTheme) {
+        setTheme(newSystemTheme);
+        document.documentElement.className = newSystemTheme;
+      }
+    };
+
+    mediaQuery.addEventListener("change", handleSystemThemeChange);
+    return () => {
+      mediaQuery.removeEventListener("change", handleSystemThemeChange);
+    };
+  }, []);
+
+  // Toggle theme manually
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
-    document.documentElement.className = newTheme; // Toggle theme class on the root
+    document.documentElement.className = newTheme; // Apply new theme to root
     localStorage.setItem("theme", newTheme); // Save preference
   };
 
