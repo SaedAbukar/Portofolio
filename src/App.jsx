@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -21,6 +22,17 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          style: {
+            backgroundColor: "var(--secondary-bg)",
+            color: "var(--text-color)",
+            borderRadius: "8px",
+            border: "1px solid var(--text-color)",
+          },
+        }}
+      />
       <Analytics />
       <SpeedInsights />
     </>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 function Contact() {
   const [formData, setFormData] = useState({
     email: "",
@@ -36,14 +37,17 @@ function Contact() {
 
       // Check if the response is OK (status code 200-299)
       if (!response.ok) {
+        toast.error("Failed to send message. Please try again");
         throw new Error("Failed to send message. Please try again.");
       }
 
       // If successful, update the state
       setSuccess(true);
+      toast.success("Email sent succesfully!");
       setFormData({ email: "", subject: "", message: "" }); // Clear form fields
     } catch (error) {
       setError(error.message); // Set error message if there is an error
+      toast.error("Failed to send message. Please try again");
     } finally {
       setLoading(false); // Stop loading once the request is completed
     }
@@ -52,10 +56,6 @@ function Contact() {
   return (
     <div className="section" id="contact">
       <h1>Contact</h1>
-      {/* Display success or error message */}
-      {success && <p className="success-message">Email sent successfully!</p>}
-      {error && <p className="error-message">{error}</p>}
-
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
           <label htmlFor="email">Your Email:</label>
@@ -95,7 +95,11 @@ function Contact() {
           />
         </div>
 
-        <button type="submit" disabled={loading} className="button1">
+        <button
+          type="submit"
+          disabled={loading}
+          className={`button1 ${loading ? "pulse-animation" : ""}`}
+        >
           {loading ? "Sending..." : "Send Message"}
         </button>
       </form>
