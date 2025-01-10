@@ -689,7 +689,13 @@ footer p {
 
   .material-symbols-outlined {
     font-size: 18px;
-    padding: 2px;
+    padding: 0 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .material-symbols-outlined {
+    font-size: 18px;
   }
 }
 
