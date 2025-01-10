@@ -29,9 +29,7 @@ function Hero() {
             Turning <span className="hero-h1-ideas">Ideas</span> Into{" "}
             <span className="hero-h1-software"> Software</span>
           </h1>
-          <p className="tagline">
-            Passionate Software Developer | Building the Future of Technology
-          </p>
+          <p className="tagline">Saed Abukar | Software Developer</p>
           <p className="description">
             I specialize in creating innovative and efficient software
             solutions. Eager to bring my skills in Full-Stack Development and
