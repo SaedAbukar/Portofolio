@@ -25,23 +25,17 @@ function About() {
       <h1>About Me</h1>
       <div>
         <p>
-          I’m Saed Abukar, a Software Engineering student at Metropolia
-          University of Applied Sciences. I have a strong foundation in
-          developing scalable, efficient software solutions and am passionate
-          about solving complex problems through technology. My focus is on
-          creating user-friendly applications, leveraging modern frameworks and
-          methodologies to deliver high-quality results.
+          Hello! I’m Saed Abukar, a Software Engineering student at Metropolia
+          University of Applied Sciences with a passion for technology and
+          solving real-world problems. I specialize in creating user-friendly
+          applications and efficient systems that make a meaningful impact.
           <br />
-          Throughout my studies, I’ve gained hands-on experience in software
-          development, system design, and data structures. I thrive in
-          collaborative environments and am always eager to learn new
-          technologies to improve my skills and contribute meaningfully to
-          real-world projects.
+          Outside of academics, I’m a football player, fitness enthusiast, and
+          nature lover, committed to balancing personal growth and well-being.
           <br />
-          I’m actively seeking opportunities to apply my technical expertise and
-          work on projects that challenge me and have a positive impact. Let’s
-          connect and explore how we can work together to build innovative
-          software solutions.
+          Let’s connect to share ideas, collaborate on innovative projects, or
+          explore new opportunities. Together, we can create something
+          impactful!
         </p>
         <div
           style={{
