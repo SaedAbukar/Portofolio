@@ -8,21 +8,24 @@ function Project(props) {
       <img src={image} alt="project picture"></img>
       <h3>{title}</h3>
       <p>{description}</p>
-      {/*link && (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          Visit site
-        </a>
-      )*/}
-      <br></br>
-      <div className="social-icons">
-        <a
-          href={github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="icon-link"
-        >
-          <i className="devicon-github-original"></i>
-        </a>
+      <div className="project-links">
+        {link && (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            Visit site
+          </a>
+        )}
+        {github && (
+          <div className="social-icons">
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-link"
+            >
+              <i className="devicon-github-original"></i>
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

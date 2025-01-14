@@ -13,7 +13,7 @@ const projectData = [
     title: "Job$cout",
     description:
       "Developed a full-stack job-hunting application using the MERN stack (MongoDB, Express, React with Vite, Node.js) with user authentication, real-time updates, and responsive design. The app scrapes job postings from third-party sites, saves them to a database, and allows registered users to view listings. Integrated GPT-3.5-Turbo API to generate personalized cover letters based on job descriptions.",
-    link: "https://jobscout-frontend.onrender.com/",
+    link: "https://jobscout.viettran.fi/",
     github: "https://github.com/Viettranni/JobScout",
   },
   {
@@ -40,7 +40,7 @@ const projectData = [
     title: "World Cup Penalty Shootout",
     description:
       "Developed a full-stack web application simulating a keyboard World Cup penalty shootout. The backend, using Python and Flask, stores venue data in an SQL database. The frontend, built with Vanilla JavaScript, HTML, and CSS, tracks player flights and displays locations in real-time using Leaflet maps. Integrated real-time user input and game logic to create an interactive and dynamic gameplay experience.",
-    link: "https://github.com/SaedAbukar/Metropolia-ICT-Year-1/tree/master/Programming%202",
+    link: "",
     github:
       "https://github.com/SaedAbukar/Metropolia-ICT-Year-1/tree/master/Programming%202",
   },
