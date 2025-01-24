@@ -158,7 +158,7 @@ nav ul li.selected {
   box-shadow: 0 8px 24px var(--shadow-color-dark);
   padding: 0px;
   margin: 10px;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .inner-hero {
