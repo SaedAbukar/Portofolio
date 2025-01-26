@@ -555,7 +555,7 @@ nav ul li.selected {
   align-self: center;
   margin-top: 10px;
   color: var(--text-color);
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
 }
 
@@ -734,6 +734,7 @@ footer p {
 
   .social-icons a {
     font-size: 3rem;
+    text-decoration: none;
   }
 
   .inner-hero {
