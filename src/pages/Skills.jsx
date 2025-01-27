@@ -24,6 +24,7 @@ const skillsData = [
     skills: [
       { name: "Node.js", icon: "devicon-nodejs-plain" },
       { name: "Express", icon: "devicon-express-original" },
+      { name: "Spring boot", icon: "devicon-spring-plain" },
       { name: "MongoDB", icon: "devicon-mongodb-plain" },
       { name: "MariaDB/SQL", icon: "devicon-mysql-plain" },
       { name: "Flask", icon: "devicon-flask-original" }, // Added Flask here
