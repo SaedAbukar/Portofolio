@@ -1,5 +1,5 @@
 import React from "react";
-import Saed from "../../assets/Ottawa.jpg";
+import Saed from "../../assets/Saed_Sunset.jpg";
 import SaedCV from "../../assets/Saed_Abukar_CV.pdf";
 import "./Hero.css";
 
@@ -32,10 +32,11 @@ function Hero() {
           </h1>
           <p className="tagline">Saed Abukar | Software Developer</p>
           <p className="description">
-            I specialize in creating innovative and efficient software
-            solutions. Eager to bring my skills in Full-Stack Development and
-            Problem Solving to a dynamic team. Let's collaborate to make an
-            impact!
+            Specializing in <strong>Mobile and Full-Stack development</strong>,
+            I build scalable, user-centric software solutions. I combine
+            technical expertise with a collaborative, team-first mindset—ready
+            to adapt quickly and solve complex problems in a dynamic engineering
+            environment.
           </p>
           <div className="social-icons">
             <a

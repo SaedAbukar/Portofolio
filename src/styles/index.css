@@ -6,7 +6,7 @@
   --primary-bg: #ffffff;
   --secondary-bg: #f4f4f5; /* Neutral Light Grey */
   --text-color: #09090b; /* Almost Black */
-  --text-light: #09090b; /* Neutral Grey */
+  --text-light: #09090b;
 
   /* ACCENT IS NOW BLACK (No Blue) */
   --accent-color: #000000;

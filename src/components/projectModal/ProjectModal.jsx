@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ImageSlider from "../ImageSlider";
-import "../styles/ProjectModal.css";
+import "./ProjectModal.css";
 
 function ProjectModal({ project, onClose }) {
   // Prevent background scrolling when modal is open

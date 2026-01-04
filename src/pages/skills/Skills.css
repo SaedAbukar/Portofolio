@@ -66,11 +66,12 @@
 
 .skill-item:hover {
   background-color: var(--accent-color);
-  color: white;
+  color: var(--primary-bg);
   border-color: var(--accent-color);
   transform: translateY(-2px);
 }
 
 .skill-item:hover i {
-  color: white;
+  /* Icon changes to the background color to be visible against the accent */
+  color: var(--primary-bg);
 }

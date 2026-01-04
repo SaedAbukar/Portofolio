@@ -110,7 +110,4 @@
   .hero-text h1 {
     font-size: 3.5rem;
   }
-  .hero-btn-container {
-    justify-content: flex-start;
-  }
 }
