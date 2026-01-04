@@ -1,0 +1,84 @@
+#contact {
+  background-color: var(--secondary-bg);
+  /* Add a subtle pattern or gradient for the last section */
+  background-image: radial-gradient(var(--border-color) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+#contact h1 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: var(--primary-bg);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  max-width: 700px;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-left: 4px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--secondary-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+/* The Modern Focus Ring */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  background-color: var(--primary-bg);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15); /* Blue glow ring */
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+#contact button {
+  margin-top: 1rem;
+}
+
+.button1.pulse-animation {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}

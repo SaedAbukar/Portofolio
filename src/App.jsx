@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Hero from "./pages/Hero";
-import About from "./pages/About";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import Hero from "./pages/hero/Hero";
+import About from "./pages/about/About";
+import Skills from "./pages/skills/Skills";
+import Projects from "./pages/projects/Projects";
+import Contact from "./pages/contact/Contact";
 import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";

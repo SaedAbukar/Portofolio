@@ -1,0 +1,116 @@
+#hero {
+  /* Removed fixed height to prevent overflow issues on mobile, min-height is better */
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px; /* Offset for fixed nav */
+}
+
+.inner-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.profile_pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* Circle looks more modern for profiles */
+  object-fit: cover;
+  border: 4px solid var(--secondary-bg);
+  box-shadow: 0 0 0 4px var(--accent-color), var(--shadow-lg); /* Double border effect */
+  transition: transform 0.5s ease;
+}
+
+.profile_pic:hover {
+  transform: scale(1.05) rotate(3deg);
+}
+
+.hero-text {
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  color: var(--text-color);
+}
+
+/* Gradient Text Effect */
+.hero-h1-software {
+  background: linear-gradient(120deg, var(--accent-color), #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  /* Removed background box, using text gradient instead */
+  padding: 0;
+  box-shadow: none;
+}
+
+.hero-h1-ideas {
+  font-family: "Tangerine", cursive;
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: var(--text-light);
+  display: block; /* Stacks nicely on mobile */
+  margin-bottom: -10px;
+}
+
+.hero-text .tagline {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.hero-text .description {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.hero-btn-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+  .inner-hero {
+    flex-direction: row; /* Side by side on desktop */
+    text-align: left;
+    gap: 60px;
+  }
+
+  .profile_pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px; /* Rounded square on desktop */
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+  .hero-h1-ideas {
+    display: inline;
+    margin-bottom: 0;
+  }
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+  .hero-btn-container {
+    justify-content: flex-start;
+  }
+}

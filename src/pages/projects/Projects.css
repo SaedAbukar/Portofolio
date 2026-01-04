@@ -1,0 +1,93 @@
+#projects {
+  background-color: var(
+    --primary-bg
+  ); /* Use primary for contrast against sections */
+}
+
+#projects h1 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Modern Grid */
+  gap: 40px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: var(--secondary-bg);
+  border-radius: 16px; /* Larger radius */
+  overflow: hidden; /* Keeps image inside border */
+  border: 1px solid var(--border-color); /* Subtle border */
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Equal height cards */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent-color);
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16/9; /* Cinematic ratio */
+  object-fit: cover;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-card h3 {
+  padding: 10px;
+  font-size: 1.25rem;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.project-card p {
+  padding: 10px;
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Pushes links to bottom */
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: auto; /* Ensures links stay at bottom */
+}
+
+.project-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: rgba(59, 130, 246, 0.1); /* Subtle background tint */
+  transition: all 0.2s ease;
+}
+
+.project-links a:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
