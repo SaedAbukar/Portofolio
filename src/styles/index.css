@@ -113,10 +113,10 @@ nav ul {
 }
 
 nav ul li {
-  padding: 8px 16px;
+  padding: 8px;
   border-radius: 50px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.5rem;
   font-weight: 500;
   transition: all 0.2s ease;
   color: var(--text-light);
@@ -215,18 +215,57 @@ footer {
 }
 
 /* ==============================
-   6. MEDIA QUERIES
+   6. MEDIA QUERIES & RESPONSIVENESS
    ============================== */
+
+/* --- 1. Ultra Small Screens (max-width: 320px) --- */
+/* e.g., iPhone SE, Galaxy Fold */
+@media (max-width: 320px) {
+  nav ul li {
+    font-size: 0.4rem;
+    margin: 0;
+    padding: 0 3px;
+  }
+
+  .material-symbols-outlined,
+  .theme-icon-btn {
+    font-size: 18px;
+    padding: 0 3px;
+  }
+}
+
+/* --- 2. Mobile & Tablet (max-width: 768px) --- */
+@media (max-width: 768px) {
+  .material-symbols-outlined,
+  .theme-icon-btn {
+    font-size: 18px;
+  }
+}
+
+/* --- 3. Desktop (min-width: 768px) --- */
 @media (min-width: 768px) {
+  /* Layout Spacing */
   .section {
     padding: 120px 10%;
   }
+
+  /* Typography */
   h1 {
     font-size: 3rem;
   }
+
+  /* UI Elements & Nav */
   nav ul li,
   footer p,
   button {
+    font-size: 1rem;
+  }
+}
+
+/* --- 4. Large Desktop (min-width: 1200px) --- */
+@media (min-width: 1200px) {
+  /* Inherits mostly from 768px, but ensures Nav remains consistent */
+  nav ul li {
     font-size: 1rem;
   }
 }

@@ -68,12 +68,12 @@
   font-weight: 600;
   color: var(--accent-color);
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   margin-bottom: 15px;
 }
 
 .hero-text .description {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   color: var(--text-light);
   line-height: 1.8;
   margin-bottom: 30px;
