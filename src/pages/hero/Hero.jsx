@@ -34,7 +34,7 @@ function Hero() {
           <p className="description">
             Specializing in <strong>Mobile and Full-Stack development</strong>,
             I build scalable, user-centric software solutions. I combine
-            technical expertise with a collaborative, team-first mindset—ready
+            technical expertise with a collaborative, team-first mindset. Ready
             to adapt quickly and solve complex problems in a dynamic engineering
             environment.
           </p>
