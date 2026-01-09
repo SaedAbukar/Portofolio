@@ -27,7 +27,7 @@ function Hero() {
         />
         <div className="hero-text">
           <h1>
-            Turning <span className="hero-h1-ideas">Ideas</span> Into{" "}
+            Turning <span className="hero-h1-software">Ideas</span> Into{" "}
             <span className="hero-h1-software"> Software</span>
           </h1>
           <p className="tagline">Saed Abukar | Software Developer</p>

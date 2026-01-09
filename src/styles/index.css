@@ -116,7 +116,7 @@ nav ul li {
   padding: 8px;
   border-radius: 50px;
   cursor: pointer;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-weight: 500;
   transition: all 0.2s ease;
   color: var(--text-light);
@@ -222,7 +222,7 @@ footer {
 /* e.g., iPhone SE, Galaxy Fold */
 @media (max-width: 320px) {
   nav ul li {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     margin: 0;
     padding: 0 3px;
   }
