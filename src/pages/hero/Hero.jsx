@@ -30,7 +30,7 @@ function Hero() {
             Turning <span className="hero-h1-software">Ideas</span> Into{" "}
             <span className="hero-h1-software"> Software</span>
           </h1>
-          <p className="tagline">Saed Abukar | Software Developer</p>
+          <p className="tagline">Saed Abukar | Software Engineering Student</p>
           <p className="description">
             Specializing in <strong>Mobile and Full-Stack development</strong>,
             I build scalable, user-centric software solutions. I combine
