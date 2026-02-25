@@ -78,15 +78,15 @@ const projectData = [
     link: "https://tacticflow-client.onrender.com/tacticalEditor",
     github: "https://github.com/SaedAbukar/Tactics_app",
   },
-  // {
-  //   id: 3,
-  //   image: FCHaxi,
-  //   title: "FC Haxi Websites",
-  //   description:
-  //     "Developed a modern and responsive home page for my local team FC Haxi using React. The platform includes key sections such as the homepage, sponsors, player profiles, contact information, social media integration, and interactive elements to engage fans. Designed with a clean, dynamic interface, the website aligns with the team's branding and delivers an optimal user experience across all devices.",
-  //   link: "https://fc-haxi.vercel.app/",
-  //   github: "https://github.com/SaedAbukar/FCHaxi",
-  // },
+  {
+    id: 3,
+    image: FCHaxi,
+    title: "FC Haxi Websites",
+    description:
+      "Developed a modern and responsive home page for my local team FC Haxi using React. The platform includes key sections such as the homepage, sponsors, player profiles, contact information, social media integration, and interactive elements to engage fans. Designed with a clean, dynamic interface, the website aligns with the team's branding and delivers an optimal user experience across all devices.",
+    link: "https://fchaxi.fi/",
+    // github: "https://github.com/SaedAbukar/FCHaxi",
+  },
   {
     id: 4,
     image: JobScoutPic,
